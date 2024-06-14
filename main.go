@@ -94,8 +94,7 @@ func keywords(a string) {
 	}
 	defer client.Close()
 
-	model := client.GenerativeModel("gemini-1.5-
-	pro")
+	model := client.GenerativeModel("gemini-1.5-pro")
 
 	prompt := []genai.Part{
 		genai.Text(a),
